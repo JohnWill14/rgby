@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafes</title>
+    
+    <link rel = "shortcut icon" type = "imagem/x-icon" href = "./img/logo.png"/>
+
+    <!-- CSS -->
+    <link href="./css/normalize.css" rel="stylesheet">
+    <link href="./css/mystyle.css" rel="stylesheet">
+    <link href="./css/carrosel.css" rel="stylesheet">
+</head>
+
+<body background="#000">
+    <header>
+        <nav>
+            <h1 class="logo">
+                <img src="./img/macha.png" width="64px" alt="logo" />
+                <p>Cafés</p>
+            </h1>
+            <ul id="links" class="nav-links">
+                <li><a href="./index.html">Home</a> </li>
+                <li><a href="./historia.html">História</a></li>
+                <li><a href="./galeria.html">Galeria</a></li>
+                <li><a href="./faleconosco.html"><button class="btn btn-primary">Fale conosco</button></a></li>
+            </ul>
+            <div id="btn-hamburguer">
+                <input type="checkbox" id="checkbox-menu" />
+                <label for="checkbox-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+    <div class="">
+        <div>
+            <div class="carrosel">
+                <div class=" slider">
+                    <div class="slides">
+                        <input type="radio" name="radio-btn" id="radio1" />
+                        <input type="radio" name="radio-btn" id="radio2" />
+                        <input type="radio" name="radio-btn" id="radio3" />
+
+                        <div class="slide first-image">
+                            <img id="carrosel-1" src="https://coffee.alexflipnote.dev/random"
+                                alt="image 1">
+                        </div>
+
+
+                        <div class="slide">
+                            <img id="carrosel-2" src="https://coffee.alexflipnote.dev/random"
+                                alt="image 1">
+                        </div>
+
+
+                        <div class="slide">
+                            <img id="carrosel-3" src="https://coffee.alexflipnote.dev/random"
+                                alt="image 1">
+                        </div>
+
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+            </div>
+            <main class="container col3">
+            </main>
+        </div>
+    </div>
+    <footer >
+        <div class="container footer">
+            <ul id="links" class="footer-flex">
+                <li><a href="./index.html">Home</a> </li>
+                <li><a href="./historia.html">História</a></li>
+                <li><a href="./galeria.html">Galeria</a></li>
+                <li><a href="./faleconosco.html">Fale conosco</a></li>
+            </ul>
+
+           <p id="criado" title="inchidente">Criado por John William - 2022</p>
+        </div>
+    </footer>
+    <script src="./js/menu.js"></script>
+    <script src="./js/carrosel.js"></script>
+</body>
+
+</html>

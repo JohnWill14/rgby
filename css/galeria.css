@@ -1,0 +1,114 @@
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+    grid-template-rows: auto;
+    
+}
+
+.container figure{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: inline-block;
+    overflow: hidden;
+}
+
+
+.container figure img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.container figure:hover img{
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+
+.container figure figcaption{
+    position: relative;
+	display: inline-block;
+    width: 100%;
+    height: 50px;
+    top: -65px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 0px 5px 5px;
+
+    transition: all 0.5s;
+}
+
+@media (max-width: 800px){
+    .container-88 img{
+        width: 100%;
+    }
+    .container-88 img:hover{
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}
+
+.modal-container{
+    width: 98vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    background-color: #fff;
+    width: 50%;
+    min-width: 300px;
+    padding:  auto;
+    padding: 40px;
+    position: relative;
+}
+
+.modal iframe{
+    width: 100%;
+}
+
+#fecha-modal{
+    position: absolute;
+    right: 0px;
+    top: -15px;
+    cursor: pointer;
+}
+
+
+.show{
+    display: flex;
+    animation: modal 0.7s;
+}
+
+
+@keyframes modal {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}

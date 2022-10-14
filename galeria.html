@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafes</title>
+    
+    <link rel = "shortcut icon" type = "imagem/x-icon" href = "./img/logo.png"/>
+
+    <!-- CSS -->
+    <link href="./css/normalize.css" rel="stylesheet">
+    <link href="./css/mystyle.css" rel="stylesheet">
+    <link href="./css/carrosel.css" rel="stylesheet">
+    <link href="./css/galeria.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">
+                <img src="./img/macha.png" width="64px" alt="logo" />
+                <p>Cafés</p>
+            </h1>
+            <ul id="links" class="nav-links">
+               
+                <li><a href="./index.html">Home</a> </li>
+                <li><a href="./historia.html">História</a></li>
+                <li><a href="./galeria.html">Galeria</a></li>
+                <li><a href="./faleconosco.html"><button class="btn btn-primary">Fale conosco</button></a></li>
+            </ul>
+            <div id="btn-hamburguer">
+                <input type="checkbox" id="checkbox-menu" />
+                <label for="checkbox-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+    <div class="">
+        <div>
+           
+            <main class="container ">
+                <section class="gallery">
+                    <br/>
+                    <h2 style="vertical-align: middle;
+                    display: table-cell;">
+                        <img src="./img/imagemIcone.png" width="32"/>
+                        Imagens
+                    </h2>
+                    <div class="grid">
+                        <figure>
+                            <img src="https://cdn.awsli.com.br/600x450/18/18885/produto/59953405/896e7bcf46.jpg" />
+                            <figcaption>
+                                    <p> Café arábica </p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://valtra.coopercitrus.com.br/wp-content/uploads/sites/58/2021/02/12.11.2016-132458-b7c6c9a336-1150x766-iioo.jpg" />
+                            <figcaption>
+                                <p> Cafés do Brasil </p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://blog.aegro.com.br/wp-content/uploads/2019/01/lavoura-de-caf%C3%A9.jpg" />
+                            <figcaption>
+                                <p> Lavroura de café </p>
+                            </figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="https://www.caseih.com/latam/pt-br/News/PublishingImages/news-2018/Case%20IH_Expocaf%C3%A9.jpg?width=1280&height=562" />
+                            <figcaption>
+                                    <p> Colheitadeira </p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://s24937.pcdn.co/wp-content/uploads/2015/11/graogourmet_tbf9710.jpg.optimal.jpg" />
+                            <figcaption>
+                                <p> Café sendo coado </p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_u9we4swf2tpo4_rHD2D4-ehfmkgPlAUVtA&usqp=CAU" />
+                            <figcaption>
+                                <p> Café </p>
+                            </figcaption>
+                        </figure>
+
+                    </div>
+                </section>
+                <br/>
+                <section class="gallery">
+                    <br/>
+                    <h2 style="vertical-align: middle;
+                    display: table-cell;">
+                        <img src="./img/marketing-de-video.png" width="32"/>
+                        Vídeos
+                    </h2>
+                    <div class="grid">
+                        <figure>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Sx3fSE0DgQm4eM8zDGYEaiv6Ta0P-o7e1A&usqp=CAU"
+                            onclick="inicialModal('modal-gallery', `https://www.youtube.com/embed/f5K2t_kshSg`);" />
+                            <figcaption>
+                                <p>Café mocha com cauda de chocolate</p>
+                            </figcaption>
+                         </figure>
+                         <figure>
+                            <img src="https://www.proteste.org.br/institucional/-/media/lobbyandpressproteste/images/imprensa/press-release/2016/pre%C3%A7o%20do%20caf%C3%A9%20expresso%20tem%20varia%C3%A7%C3%A3o%20de%20at%C3%A9%20115/cafe-expresso.jpg?rev=a44d8113-c1e5-4c79-bd48-04cc5ba6acf4&h=330&w=500&la=pt-BR&hash=37F82218B923B282BB12E9AF7E0DF6B0"
+                            onclick="inicialModal('modal-gallery', `https://www.youtube.com/embed/HYVHfsPu_k8`);" />
+                            <figcaption>
+                                <p>Café expresso</p>
+                            </figcaption>
+                        
+                         </figure>
+                         <figure>
+                            <img src="data:image/jpeg;base64,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"
+                            onclick="inicialModal('modal-gallery', `https://www.youtube.com/embed/4nzvKimcUBY`);" />
+                            <figcaption>
+                                <p>Café com leite</p>
+                            </figcaption>
+                         </figure>
+                    </div>
+                </section>
+                <br/>
+                <br/>
+                <br/>
+
+            </main>
+        </div>
+    </div>
+
+
+    <div id="modal-gallery" class="modal-container" onclick="fecharModal('modal-gallery')">
+        <div class="modal">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/T8oF5CrenU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           <br/>
+            <p id="fecha-modal" class="" onclick="fecharModal('modal-gallery')">
+                <img src="https://icones.pro/wp-content/uploads/2022/05/icone-fermer-et-x-orange.png" width="40px" />
+            </p>
+        </div>
+    </div>
+
+    <footer >
+        <div class="container footer">
+            <ul id="links" class="footer-flex">
+                <li><a href="./index.html">Home</a> </li>
+                <li><a href="./historia.html">História</a></li>
+                <li><a href="./galeria.html">Galeria</a></li>
+                <li><a href="./faleconosco.html">Fale conosco</a></li>
+            </ul>
+
+           <p id="criado">Criado por John William - 2022</p>
+        </div>
+    </footer>
+    <script src="./js/menu.js"></script>
+    <script src="./js/carrosel.js"></script>
+    <script src="./js/modal.js"></script>
+</body>
+
+</html>
